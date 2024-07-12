@@ -1,6 +1,6 @@
 @use "../abstract/mixins";
 @use "../abstract/variables";
-.header_listItem:hover {
+.header_link:hover {
   color: variables.$Soft-red;
   transition: 0.1s color;
 }

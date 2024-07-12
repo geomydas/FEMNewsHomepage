@@ -7,37 +7,41 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header class="header">
+      <img src="../assets/images/logo.svg" alt="logo" />
+      <nav class="header_navigation">
+        <ul class="header_list">
+          <li class="header_listItem">
+            <a href="#" class="header_link">Home</a>
+          </li>
+          <li class="header_listItem">
+            <a href="#" class="header_link">New</a>
+          </li>
+          <li class="header_listItem">
+            <a href="#" class="header_link">Popular</a>
+          </li>
+          <li class="header_listItem">
+            <a href="#" class="header_link">Trending</a>
+          </li>
+          <li class="header_listItem">
+            <a href="#" class="header_link">Categories</a>
+          </li>
+        </ul>
+        <button class="header_untoggle-hamburger" onclick="untogglehamburger()"></button>
+      </nav>
+      <button class="header_toggle-hamburger" onclick="togglehamburger()"></button>
+    </header>
     <main class="main">
-      <header class="header">
-        <img src="../assets/images/logo.svg" alt="logo" />
-        <nav class="header_navigation">
-          <ul class="header_list">
-            <li class="header_listItem" tabindex="1">Home</li>
-            <li class="header_listItem" tabindex="2">New</li>
-            <li class="header_listItem" tabindex="3">Popular</li>
-            <li class="header_listItem" tabindex="4">Trending</li>
-            <li class="header_listItem" tabindex="5">Categories</li>
-          </ul>
-          <button
-            class="header_untoggle-hamburger"
-            onclick="untogglehamburger()"
-          ></button>
-        </nav>
-        <button
-          class="header_toggle-hamburger"
-          onclick="togglehamburger()"
-        ></button>
-      </header>
       <div class="grid-container_article-aside-img">
         <img
           src="../assets/images/image-web-3-desktop.jpg"
-          alt="article image"
+          alt="A vector image which is made of multiple three-dimensional shapes mainly cubes, cylinders and triangles with colors ranging to orange, red, blue, violet"
           aria-labelledby="article"
           class="article_img-desktop"
         />
         <img
           src="../assets/images/image-web-3-mobile.jpg"
-          alt="article image "
+          alt="A vector image which is made of multiple three-dimensional shapes mainly cubes, cylinders and triangles with colors ranging to orange, red, blue, violet"
           aria-labelledby="article"
           class="article_img-mobile"
         />
@@ -49,27 +53,23 @@
               power of the platforms back into the hands of the people. But is
               it really fulfilling its promise?
             </p>
-            <button class="article_button" tabindex="6">Read more</button>
+            <button class="article_button">Read more</button>
           </div>
         </article>
         <aside class="aside">
           <h2 class="aside_header">New</h2>
-          <h3 class="aside_subheader" tabindex="7">
-            Hydrogen VS Electric Cars
-          </h3>
+          <h3 class="aside_subheader">Hydrogen VS Electric Cars</h3>
           <p class="aside_paragraph">
             Will hydrogen-fueled cars ever catch up to EVs?
           </p>
           <hr class="aside_horizontalbreak" />
-          <h3 class="aside_subheader" tabindex="8">
-            The Downsides of AI Artistry
-          </h3>
+          <h3 class="aside_subheader">The Downsides of AI Artistry</h3>
           <p class="aside_paragraph">
             What are the possible adverse effects of on-demand AI image
             generation?
           </p>
           <hr class="aside_horizontalbreak" />
-          <h3 class="aside_subheader" tabindex="9">Is VC Funding Drying Up?</h3>
+          <h3 class="aside_subheader">Is VC Funding Drying Up?</h3>
           <p class="aside_paragraph">
             Private funding by VC firms is down 50% YOY. We take a look at what
             that means.
@@ -106,7 +106,7 @@
                 Laptops of 2022
               </h2>
               <p class="footer_paragraph">
-                Our best picks for various needs and budgets.
+                Our best picks for letious needs and budgets.
               </p>
             </div>
           </li>
@@ -131,14 +131,15 @@
     </main>
 
     <script>
+ 
       function togglehamburger() {
-        var element = document.body;
+        let element = document.body;
         element.classList.toggle("togglehamburger");
         element.classList.remove("untogglehamburger");
       }
 
       function untogglehamburger() {
-        var element = document.body;
+        let element = document.body;
         element.classList.toggle("untogglehamburger");
         element.classList.remove("togglehamburger");
       }

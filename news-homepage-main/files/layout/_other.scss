@@ -4,14 +4,12 @@ body {
   background-color: variables.$Off-white;
   padding: 3rem 5rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
 }
-
-main {
-  max-width: 1200px;
-}
+ 
 
 .grid-container_article-aside-img {
   display: grid;

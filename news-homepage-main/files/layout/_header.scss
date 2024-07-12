@@ -3,6 +3,8 @@
 
 .header {
   display: flex;
+  width: 100%;
+ 
   align-items: center;
   margin-bottom: 3rem;
 
@@ -15,13 +17,14 @@
     list-style: none;
   }
 
-  &_listItem {
+  
+  &_link {
+    text-decoration: none;
     color: variables.$Dark-grayish-blue;
   }
-
+ 
   &_toggle-hamburger,
   &_untoggle-hamburger {
     display: none;
   }
-  
 }
