@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   margin-top: 5rem;
-  
+
   &_list {
     display: flex;
     gap: 1rem;
@@ -12,32 +12,32 @@
     padding: 0;
     list-style: none;
   }
-  
+
   &_listItem {
     display: flex;
     gap: 1rem;
   }
-  
+
   &_img {
     max-width: 6.25rem;
     aspect-ratio: 1 / 1.5;
   }
-  
+
   &_subheader-othercontent {
     display: block;
     color: variables.$Soft-red;
     font-size: 2rem;
   }
-  
+
   &_subheader {
     @include mixins.extra-bold;
     color: variables.$Very-dark-blue;
     font-size: 1.25rem;
   }
-  
+  &_link {
+    text-decoration: none;
+  }
   &_paragraph {
     color: variables.$Dark-grayish-blue;
   }
-  
 }
-

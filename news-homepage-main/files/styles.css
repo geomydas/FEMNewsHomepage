@@ -167,6 +167,9 @@ h6 {
   color: hsl(240, 100%, 5%);
   font-size: 1.25rem;
 }
+.footer_link {
+  text-decoration: none;
+}
 .footer_paragraph {
   color: hsl(236, 13%, 42%);
 }
