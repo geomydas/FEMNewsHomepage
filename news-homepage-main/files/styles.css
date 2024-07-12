@@ -308,5 +308,20 @@ body {
     width: 100%;
   }
 }
+@media (min-width: 160em) {
+  body {
+    scale: 1.1;
+  }
+}
+@media (min-width: 200em) {
+  body {
+    scale: 1.3;
+  }
+}
+@media (min-width: 266em) {
+  body {
+    scale: 1.9;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
