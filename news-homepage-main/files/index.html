@@ -27,9 +27,15 @@
             <a href="#" class="header_link">Categories</a>
           </li>
         </ul>
-        <button class="header_untoggle-hamburger" onclick="untogglehamburger()"></button>
+        <button
+          class="header_untoggle-hamburger"
+          onclick="untogglehamburger()"
+        ></button>
       </nav>
-      <button class="header_toggle-hamburger" onclick="togglehamburger()"></button>
+      <button
+        class="header_toggle-hamburger"
+        onclick="togglehamburger()"
+      ></button>
     </header>
     <main class="main">
       <div class="grid-container_article-aside-img">
@@ -85,10 +91,12 @@
               class="footer_img"
             />
             <div class="footer_text-container">
-              <h2 class="footer_subheader"  >
-                <span class="footer_subheader-othercontent">01</span> Reviving
-                Retro PCs
-              </h2>
+              <a href="#" class="footer_link">
+                <h2 class="footer_subheader">
+                  <span class="footer_subheader-othercontent">01</span> Reviving
+                  Retro PCs
+                </h2>
+              </a>
               <p class="footer_paragraph">
                 What happens when old PCs are given modern upgrades?
               </p>
@@ -101,10 +109,12 @@
               class="footer_img"
             />
             <div class="footer_text-container">
-              <h2 class="footer_subheader"  >
-                <span class="footer_subheader-othercontent">02</span> Top 10
-                Laptops of 2022
-              </h2>
+              <a href="#" class="footer_link">
+                <h2 class="footer_subheader">
+                  <span class="footer_subheader-othercontent">02</span> Top 10
+                  Laptops of 2022
+                </h2>
+              </a>
               <p class="footer_paragraph">
                 Our best picks for letious needs and budgets.
               </p>
@@ -117,10 +127,13 @@
               class="footer_img"
             />
             <div class="footer_text-container">
-              <h2 class="footer_subheader"  >
-                <span class="footer_subheader-othercontent">03</span> The Growth
-                of Gaming
-              </h2>
+              <a href="#" class="footer_link">
+                <h2 class="footer_subheader">
+                  <span class="footer_subheader-othercontent">03</span> The
+                  Growth of Gaming
+                </h2>
+              </a>
+
               <p class="footer_paragraph">
                 How the pandemic has sparked fresh opportunities.
               </p>
@@ -131,7 +144,6 @@
     </main>
 
     <script>
- 
       function togglehamburger() {
         let element = document.body;
         element.classList.toggle("togglehamburger");
