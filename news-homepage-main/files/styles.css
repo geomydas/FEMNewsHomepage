@@ -171,6 +171,12 @@ h6 {
   color: hsl(236, 13%, 42%);
 }
 
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 body {
   background-color: hsl(36, 100%, 99%);
   padding: 3rem 5rem;
@@ -179,6 +185,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  max-width: 93.75rem;
 }
 
 .grid-container_article-aside-img {
@@ -190,6 +197,7 @@ body {
 
 .article_img-desktop {
   grid-column: span 2;
+  width: 100%;
 }
 
 .article_img-mobile {
